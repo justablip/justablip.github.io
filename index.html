@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Just a blip</title>
-    <link rel="alternate" type="application/rss+xml" title="Just a blip" href="justablip.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Just a blip" href="http://justablip.github.io/justablip.xml" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
@@ -27,7 +27,7 @@
           // outer template for the html transformation
           // default: "<ul>{entries}</ul>"
           // valid values: any string
-          layoutTemplate: "<div class='feed-container'>{entries}</div>",
+          layoutTemplate: "<ul>{entries}</ul>",
 
           // inner template for each entry
           // default: '<li><a href="{url}">[{author}@{date}] {title}</a><br/>{shortBodyPlain}</li>'
@@ -37,14 +37,30 @@
       })
     </script>
     <style>
-      html{
+      html,body{
+        font-family: sans-serif;;
+        background-color:black;
+        color:#ccc;
+        margin:1.5em;
+      }
+      h1,h2,h3,h4 {
+        font-weight: normal;
+      }
+      a { 
+        color: #fff;
+        text-decoration: none;
+      }
+      ul{
+        padding-left: 0em 
+      }
+      li{
         margin:1em;
       }
     </style>
   </head>
   <body>
     <h1>Just a blip</h2>
-    <h4><a href="justablip.xml">RSS</a></h4>
+    <h4><a href="http://justablip.github.io/justablip.xml">RSS</a> · <a href="https://www.mixcloud.com/DublinDigitalRadio/playlists/just-a-blip/">Mixcloud</a> · <a href="https://listen.dublindigitalradio.com/resident/just-a-blip">DDR</a></h4>
     <p><img src="justablip.jpg" width="300px"></p>
     <div id="rss-feeds"></div>
   </body>
