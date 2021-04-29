@@ -22,7 +22,7 @@ RSS_LINK=https://justablip.github.io/justablip.xml
 # Where the feed file lives on the disk (e.g /home/dog/www/rssfeed.xml) has to match above
 RSS_FILE=../justablip.xml
 # URL to an image representing the feed
-IMAGE=https://justablip.github.io/justablip.png
+IMAGE=https://justablip.github.io/justablip.jpg
 # Short description of the podcast - 255 character max.
 SUBTITLE=$DESCRIPTION
 
