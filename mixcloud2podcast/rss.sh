@@ -174,5 +174,6 @@ gitpush () {
         git push
 }
 gitpush
+echo "All done!"
 exit
 
