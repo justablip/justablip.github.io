@@ -2,3 +2,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+*.m4a
+*.mp3
+*.mp4
