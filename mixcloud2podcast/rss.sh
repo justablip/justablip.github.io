@@ -1,10 +1,12 @@
 #!/bin/bash
 
-# Creates an podcast rss file from a folder of m4a and metadata json files 
+# Creates a podcast rss file from a folder of m4a and metadata json files 
 # downloaded from mixckoud using youtube-dl.
 #
-# Adapted from on https://github.com/maxhebditch/rss-roller
+# Adapted from https://github.com/maxhebditch/rss-roller
 #
+# Requirements:
+# brew install jq (command-line JSON processor)
 # ------------------------------------------------------------------------
 
 # File path for the audio and json metadata files 
