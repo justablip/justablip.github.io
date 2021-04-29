@@ -27,6 +27,6 @@ Heavily adapted from https://github.com/maxhebditch/rss-roller
 _Requirements:_  
 brew install jq (command-line JSON processor)
 
-#### upload_batch
+#### upload_batch.sh
 Utility to batch upload multiple files to the Internet Archive
 
