@@ -40,7 +40,6 @@ echo """<channel>
         <atom:link href='$RSS_LINK' rel='self' type='application/rss+xml' />
         <title>$TITLE</title>
         <link>$LINK</link>
-        <managingEditor>$AUTHOR</managingEditor>
         <description>$DESCRIPTION</description>
         <lastBuildDate>$RSS_DATE</lastBuildDate>
         <language>en-us</language>
