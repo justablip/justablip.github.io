@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#
 # Utility to batch upload multiple files to the internet archive
 #
 
