@@ -1,7 +1,11 @@
+# Jekyll
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+# mac
+.DS_Store
+# media
 *.m4a
 *.mp3
 *.mp4
