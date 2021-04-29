@@ -18,16 +18,17 @@ AUTHOR="Glenn O\'Brien"
 # Verbose description of the podcast
 DESCRIPTION='A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!'
 # The URL to where the rss feed will live: (e.g http://domain.tld/rssfeed.xml)
-RSS_LINK=https://justablip.github.io/justablip.xml
+RSS_LINK=http://feeds.feedburner.com/just-a-blip
 # Where the feed file lives on the disk (e.g /home/dog/www/rssfeed.xml) has to match above
 RSS_FILE=../justablip.xml
 # URL to an image representing the feed
 IMAGE=http://justablip.github.io/justablip.jpg
 # Short description of the podcast - 255 character max.
 SUBTITLE=$DESCRIPTION
-
 # Itunes category See https://www.podcastinsights.com/itunes-podcast-categories/ for valid categories
 CATEGORY="Music"
+# Channel keywords, space and comma separated
+KEYWORDS="dublindigitalradio, justablip, blip, radio, podcast, ireland, dublin, music, alternative"
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
@@ -56,6 +57,7 @@ echo """<channel>
         <itunes:summary>$DESCRIPTION</itunes:summary>        
         <itunes:category text='$CATEGORY' />
         <itunes:image href='$IMAGE' />
+        <itunes:keywords>$KEYWORDS</itunes:keywords>
 
 """ >> ./feedtop
 echo "Adding the header"
