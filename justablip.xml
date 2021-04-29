@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom' xmlns:itunes='http://www.itunes.com/dtds/podcast-1.0.dtd'>
 
 <channel>
         <atom:link href='https://justablip.github.io/justablip.xml' rel='self' type='application/rss+xml' />
@@ -7,7 +7,7 @@
         <link>https://listen.dublindigitalradio.com/resident/just-a-blip</link>
         <managingEditor>Glenn O\'Brien</managingEditor>
         <description>A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!</description>
-        <lastBuildDate>Thu, 29 Apr 2021 13:11:40 +0200</lastBuildDate>
+        <lastBuildDate>Thu, 29 Apr 2021 13:17:18 +0200</lastBuildDate>
         <language>en-us</language>
         <ttl>60</ttl>
         <image>
