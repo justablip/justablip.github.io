@@ -137,7 +137,7 @@ done
 
 for json in "${arr_json[@]}"; do
         let item_num+=1
-        echo -ne "Adding item $item_num/$items_total"
+        echo -ne "Adding item $item_num/$items_total"\\r
 
         m4a=${json%.info.json}.m4a # full path to m4a file (from json file path)
 
