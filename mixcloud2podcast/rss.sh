@@ -150,7 +150,6 @@ for json in "${arr_json[@]}"; do
         item
 done
 combine
-cp $RSS_FILE justablip.rss
 echo "RSS file saved."
 
 gitpush () {
