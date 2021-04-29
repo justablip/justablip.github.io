@@ -14,7 +14,7 @@ TITLE='Just A Blip'
 # Link to the podcast's website
 LINK=https://listen.dublindigitalradio.com/resident/just-a-blip
 # Org, brand or individual
-AUTHOR="Glenn OBrien"
+AUTHOR="Glenn O\'Brien"
 # Verbose description of the podcast
 DESCRIPTION='A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!'
 # The URL to where the rss feed will live: (e.g http://domain.tld/rssfeed.xml)
@@ -150,6 +150,7 @@ for json in "${arr_json[@]}"; do
         item
 done
 combine
+cp $RSS_FILE justablip.rss
 echo "RSS file saved."
 
 gitpush () {
@@ -160,6 +161,5 @@ gitpush () {
         git push
 }
 gitpush
-
 exit
 
