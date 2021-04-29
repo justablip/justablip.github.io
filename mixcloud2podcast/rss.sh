@@ -111,6 +111,9 @@ echo "Processing $items_total items..."
 item_num=0
 
 for json in "${arr_json[@]}"; do
+        let item_num+=1
+        echo -ne "Checking item $item_num/$items_total"\\r
+
         m4a=${json%.info.json}.m4a # full path to m4a file (from json file path)
 
         # add data to json (so we dont need the m4a anymore)
@@ -135,6 +138,8 @@ for json in "${arr_json[@]}"; do
         fi
 done
 
+echo ''
+item_num=0
 for json in "${arr_json[@]}"; do
         let item_num+=1
         echo -ne "Adding item $item_num/$items_total"\\r
