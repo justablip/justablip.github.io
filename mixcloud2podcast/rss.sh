@@ -164,7 +164,7 @@ for json in "${arr_json[@]}"; do
         item
 done
 combine
-echo "RSS file saved."
+echo "RSS file saved"
 
 gitpush () {
         echo "Pushing to git..."
