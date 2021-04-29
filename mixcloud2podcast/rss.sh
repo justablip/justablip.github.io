@@ -9,22 +9,22 @@
 
 # File path for the audio and json metadata files 
 ARCHIVE_DIR=./downloads
+# Where the feed file lives on the disk (e.g /home/dog/www/rssfeed.xml)
+RSS_FILE=../justablip.xml
 # Name of the podcast
 TITLE="Just A Blip"
 # Link to the podcast's website
 LINK=https://listen.dublindigitalradio.com/resident/just-a-blip
+# The URL to where the rss feed will live: (e.g http://domain.tld/rssfeed.xml)
+RSS_LINK=http://feeds.feedburner.com/just-a-blip
 # Org, brand or individual's name
 AUTHOR="Glenn O'Brien"
 # Verbose description of the podcast
-DESCRIPTION='A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!'
-# The URL to where the rss feed will live: (e.g http://domain.tld/rssfeed.xml)
-RSS_LINK=http://feeds.feedburner.com/just-a-blip
-# Where the feed file lives on the disk (e.g /home/dog/www/rssfeed.xml) has to match above
-RSS_FILE=../justablip.xml
-# URL to an image representing the feed (iTunes prefers 1400x1400 jpg)
-IMAGE=http://justablip.github.io/justablip.jpg
+DESCRIPTION="A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!"
 # Short description of the podcast - 255 character max
 SUBTITLE=$DESCRIPTION
+# URL to an image representing the feed (iTunes prefers 1400x1400 jpg)
+IMAGE=http://justablip.github.io/justablip.jpg
 # Itunes category See https://www.podcastinsights.com/itunes-podcast-categories/ for valid categories
 CATEGORY="Music"
 # Channel keywords, comma and space separated
