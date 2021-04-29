@@ -28,7 +28,7 @@ SUBTITLE=$DESCRIPTION
 # Itunes category See https://www.podcastinsights.com/itunes-podcast-categories/ for valid categories
 CATEGORY="Music"
 # Channel keywords, comma and space separated
-KEYWORDS="dublindigitalradio, justablip, blip, radio, podcast, ireland, dublin, music, alternative"
+KEYWORDS="dublindigitalradio, justablip, radio, podcast, ireland, dublin, music, alternative"
 # The language the media is recorded in as a locale string
 LANGUAGE="en-us"
 
