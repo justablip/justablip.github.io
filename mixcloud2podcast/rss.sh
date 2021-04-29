@@ -26,6 +26,8 @@ IMAGE=https://justablip.github.io/justablip.png
 # Short description of the podcast - 255 character max.
 SUBTITLE=$DESCRIPTION
 
+# Itunes category See https://www.podcastinsights.com/itunes-podcast-categories/ for valid categories
+CATEGORY="Music"
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
@@ -35,7 +37,6 @@ RSS_DATE=$(date -R) # now
 header () {
 echo """<?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:atom='http://www.w3.org/2005/Atom' xmlns:content='http://purl.org/rss/1.0/modules/content/' xmlns:googleplay='http://www.google.com/schemas/play-podcasts/1.0' xmlns:itunes='http://www.itunes.com/dtds/podcast-1.0.dtd' version='2.0'>
-
 """ > ./feedtop
 echo """<channel>
         <atom:link href='$RSS_LINK' rel='self' type='application/rss+xml' />
@@ -53,6 +54,8 @@ echo """<channel>
         <itunes:author>$AUTHOR</itunes:author>
         <itunes:subtitle>$SUBTITLE</itunes:subtitle>
         <itunes:summary>$DESCRIPTION</itunes:summary>        
+        <itunes:category text='$CATEGORY' />
+        <itunes:image href='$IMAGE' />
 
 """ >> ./feedtop
 echo "Adding the header"
