@@ -3,7 +3,7 @@
 # Uploads a mixcloud m4a file to the Internet Archive
 #
 # Requirements:
-# brew install internetarchive (internet archive's command line interface)
+# brew install internetarchive (Internet Archive's command line interface)
 # ------------------------------------------------------------------------
 
 # Internet archive screen name

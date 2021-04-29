@@ -15,7 +15,7 @@ brew install atomicparsley (so thumbnail can be embedded into m4a file)
 Uploads a mixcloud m4a file to the Internet Archive
 
 _Requirements:_  
-brew install internetarchive (internet archive's command line interface)
+brew install internetarchive (Internet Archive's command line interface)
 
 #### rss.sh
 Creates a podcast rss file from a folder of m4a and metadata json files downloaded from mixcloud using youtube-dl. Also pushes to a git repository.
@@ -26,5 +26,5 @@ _Requirements:_
 brew install jq (command-line JSON processor)
 
 #### upload_batch
-Utility to batch upload multiple files to the internet archive
+Utility to batch upload multiple files to the Internet Archive
 
