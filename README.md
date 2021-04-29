@@ -7,25 +7,24 @@ Converts "Just A Blip" radio show from Mixcloud to an RSS podcast (with media ho
 #### download.sh
 Downloads all m4a and json metadata for a mixcloud playlist or user
 
-Requirements:
+__Requirements:__
 brew install youtube-dl (to download files from mixcloud)
 brew install atomicparsley (so thumbnail can be embedded into m4a file)
 
 #### upload.sh
 Uploads a mixcloud m4a file to the Internet Archive
 
-Requirements:
+__Requirements:__
 brew install internetarchive (internet archive's command line interface)
 
 #### rss.sh
-Creates a podcast rss file from a folder of m4a and metadata json files downloaded from mixcloud using youtube-dl
+Creates a podcast rss file from a folder of m4a and metadata json files downloaded from mixcloud using youtube-dl. Also pushes to a git repository.
 
 Heavily adapted from https://github.com/maxhebditch/rss-roller
 
-Requirements:
+__Requirements:__
 brew install jq (command-line JSON processor)
 
 #### upload_batch
 Utility to batch upload multiple files to the internet archive
-
 
