@@ -5,11 +5,17 @@
 #
 # ------------------------------------------------------------------------
 
+# Internet archive screen name
 AUTHOR='abmc'
+# The person or organization that provided the physical or digital media
 CONTRIBUTOR='António Costa'
+# The individual(s) or organization that created the media content.
 CREATOR="Glenn O'Brien"
+# Source of media. Where a piece of media originated or what the physical media was prior to digitization
 SOURCE='Dublin Digital Radio'
+# Subjects and/or topics covered by the media content. Tags semicolon and space separated.
 SUBJECT='dublindigitalradio; justablip; radio; podcast; ireland; dublin; music; alternative'
+# The language the media is written or recorded in as 3 letter MARC language code
 LANGUAGE='eng'
 
 # Don't edit below this line unless you know what you are doing.

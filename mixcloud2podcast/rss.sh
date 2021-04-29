@@ -10,10 +10,10 @@
 # File path for the audio and json metadata files 
 ARCHIVE_DIR=./downloads
 # Name of the podcast
-TITLE='Just A Blip'
+TITLE="Just A Blip"
 # Link to the podcast's website
 LINK=https://listen.dublindigitalradio.com/resident/just-a-blip
-# Org, brand or individual
+# Org, brand or individual's name
 AUTHOR="Glenn O'Brien"
 # Verbose description of the podcast
 DESCRIPTION='A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!'
@@ -21,14 +21,16 @@ DESCRIPTION='A fortnightly voyage through oceans of sound. Sometimes calm with c
 RSS_LINK=http://feeds.feedburner.com/just-a-blip
 # Where the feed file lives on the disk (e.g /home/dog/www/rssfeed.xml) has to match above
 RSS_FILE=../justablip.xml
-# URL to an image representing the feed
+# URL to an image representing the feed (iTunes prefers 1400x1400 jpg)
 IMAGE=http://justablip.github.io/justablip.jpg
-# Short description of the podcast - 255 character max.
+# Short description of the podcast - 255 character max
 SUBTITLE=$DESCRIPTION
 # Itunes category See https://www.podcastinsights.com/itunes-podcast-categories/ for valid categories
 CATEGORY="Music"
-# Channel keywords, space and comma separated
+# Channel keywords, comma and space separated
 KEYWORDS="dublindigitalradio, justablip, blip, radio, podcast, ireland, dublin, music, alternative"
+# The language the media is recorded in as a locale string
+LANGUAGE="en-us"
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
@@ -45,7 +47,7 @@ echo """<channel>
         <link>$LINK</link>
         <description>$DESCRIPTION</description>
         <lastBuildDate>$RSS_DATE</lastBuildDate>
-        <language>en-us</language>
+        <language>$LANGUAGE</language>
         <ttl>60</ttl>
         <image>
                 <link>$LINK</link>
@@ -137,7 +139,7 @@ for json in "${arr_json[@]}"; do
 
         m4a=${json%.info.json}.m4a # full path to m4a file (from json file path)
 
-        item_id=$(jq --raw-output '.id' $json) # id
+        item_id=$(jq --raw-output '.id' $json) # the item's id from json file
         item_title=$(jq --raw-output '.title' $json) # get data from json
         item_date=$(jq --raw-output '.timestamp' $json) # get data from json
         item_date=$(date -j -f "%s" $item_date "+%a, %d %b %Y %H:%M:%S %z") # convert timestamp to date string
