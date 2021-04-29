@@ -13,14 +13,19 @@ ARCHIVE_DIR=./downloads
 TITLE='Just A Blip'
 # Link to the podcast's website
 LINK=https://listen.dublindigitalradio.com/resident/just-a-blip
-# Brief description of the podcast
+# Org, brand or individual
+AUTHOR="Glenn O'Brien"
+# Verbose description of the podcast
 DESCRIPTION='A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!'
 # The URL to where the rss feed will live: (e.g http://domain.tld/rssfeed.xml)
 RSS_LINK=https://justablip.github.io/justablip.xml
-# URL to an image representing the feed
-IMAGE=https://justablip.github.io/justablip.png
 # Where the feed file lives on the disk (e.g /home/dog/www/rssfeed.xml) has to match above
 RSS_FILE=../justablip.xml
+# URL to an image representing the feed
+IMAGE=https://justablip.github.io/justablip.png
+# Short description of the podcast - 255 character max.
+SUBTITLE=$DESCRIPTION
+
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
@@ -35,6 +40,7 @@ echo """<channel>
         <atom:link href='$RSS_LINK' rel='self' type='application/rss+xml' />
         <title>$TITLE</title>
         <link>$LINK</link>
+        <managingEditor>$AUTHOR</managingEditor>
         <description>$DESCRIPTION</description>
         <lastBuildDate>$RSS_DATE</lastBuildDate>
         <language>en-us</language>
@@ -44,6 +50,9 @@ echo """<channel>
                 <url>$IMAGE</url>
                 <title>$TITLE</title>
         </image>
+        <itunes:author>$AUTHOR</itunes:author>
+        <itunes:subtitle>$SUBTITLE</itunes:subtitle>
+        <itunes:summary>$DESCRIPTION</itunes:summary>        
 
 """ >> ./feedtop
 echo "Adding the header"
@@ -145,7 +154,7 @@ echo "RSS file saved."
 
 gitpush () {
         echo "Pushing to git..."
-        cd justablip.github.io 
+        cd ..
         git add .
         git commit -m "Updated feed"
         git push
