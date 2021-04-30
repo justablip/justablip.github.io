@@ -37,6 +37,8 @@ CATEGORY="Music"
 KEYWORDS="dublindigitalradio, justablip, radio, podcast, ireland, dublin, music, alternative"
 # The language the media is recorded in as a locale string
 LANGUAGE="en-us"
+# is it too dangerous for the impressionable kiddos?
+EXPLICIT="no"
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
@@ -71,6 +73,7 @@ echo """<channel>
                 <itunes:name>$AUTHOR</itunes:name>
                 <itunes:email>$EMAIL</itunes:email>
         </itunes:owner>
+        <itunes:explicit>$EXPLICIT</itunes:explicit>
 
 """ >> ./feedtop
 echo "Adding the header"
