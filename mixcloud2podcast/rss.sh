@@ -21,6 +21,8 @@ LINK=https://listen.dublindigitalradio.com/resident/just-a-blip
 RSS_LINK=http://feeds.feedburner.com/just-a-blip
 # Org, brand or individual's name
 AUTHOR="Glenn O'Brien"
+# © 2021 FirstName LastName
+COPYRIGHT="&#xA9; $(date +"%Y") $AUTHOR"
 # Owner email
 EMAIL="gob00@yahoo.com"
 # Verbose description of the podcast
@@ -52,6 +54,7 @@ echo """<channel>
         <description>$DESCRIPTION</description>
         <lastBuildDate>$RSS_DATE</lastBuildDate>
         <language>$LANGUAGE</language>
+        <copyright>$COPYRIGHT</copyright>
         <ttl>60</ttl>
         <image>
                 <link>$LINK</link>
@@ -67,7 +70,7 @@ echo """<channel>
         <itunes:owner>
                 <itunes:name>$AUTHOR</itunes:name>
                 <itunes:email>$EMAIL</itunes:email>
-        </itunes:owner>``
+        </itunes:owner>
 
 """ >> ./feedtop
 echo "Adding the header"
@@ -179,7 +182,7 @@ gitpush () {
         git commit -m "Updated feed"
         git push
 }
-gitpush
+#gitpush
 echo "All done!"
 exit
 
