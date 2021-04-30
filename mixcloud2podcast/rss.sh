@@ -164,8 +164,8 @@ for json in "${arr_json[@]}"; do
         item_date=$(jq --raw-output '.timestamp' $json) # get data from json
         item_date=$(date -j -f "%s" $item_date "+%a, %d %b %Y %H:%M:%S %z") # convert timestamp to date string
         item_link=$(jq --raw-output '.webpage_url' $json) # mixcloud link
-        item_guid='https://archive.org/details/'$item_id 
-        item_enclosure='https://archive.org/download/'$item_id'/'$item_id'.m4a'
+        item_guid='http://archive.org/details/'$item_id 
+        item_enclosure='http://archive.org/download/'$item_id'/'$item_id'.m4a'
         #item_enclosure_length=$(stat -f%z $m4a) # get file size in bytes
         item_enclosure_length=$(jq --raw-output '.length' $json) # get file size in bytes (we added this data to the json above)
         item_enclosure_type='audio/m4a'
