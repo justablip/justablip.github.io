@@ -22,7 +22,7 @@ RSS_LINK=http://feeds.feedburner.com/just-a-blip
 # Org, brand or individual's name
 AUTHOR="Glenn O'Brien"
 # Owner email
-EMAIL="gob00@yahoo.com"
+EMAIL="abmc@gmx.net"
 # Verbose description of the podcast
 DESCRIPTION="A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!"
 # Short description of the podcast - 255 character max
