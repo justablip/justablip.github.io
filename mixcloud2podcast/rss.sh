@@ -182,7 +182,7 @@ gitpush () {
         git commit -m "Updated feed"
         git push
 }
-#gitpush
+gitpush
 echo "All done!"
 exit
 
