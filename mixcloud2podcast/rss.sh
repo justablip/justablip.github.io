@@ -21,6 +21,8 @@ LINK=https://listen.dublindigitalradio.com/resident/just-a-blip
 RSS_LINK=http://feeds.feedburner.com/just-a-blip
 # Org, brand or individual's name
 AUTHOR="Glenn O'Brien"
+# Owner email
+AUTHOR="gob00@yahoo.com"
 # Verbose description of the podcast
 DESCRIPTION="A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!"
 # Short description of the podcast - 255 character max
@@ -56,12 +58,16 @@ echo """<channel>
                 <url>$IMAGE</url>
                 <title>$TITLE</title>
         </image>
-        <itunes:author>$AUTHOR</itunes:author>
         <itunes:subtitle>$SUBTITLE</itunes:subtitle>
         <itunes:summary>$DESCRIPTION</itunes:summary>        
         <itunes:category text='$CATEGORY' />
         <itunes:image href='$IMAGE' />
         <itunes:keywords>$KEYWORDS</itunes:keywords>
+        <itunes:author>$AUTHOR</itunes:author>
+        <itunes:owner>
+                <itunes:name>$AUTHOR</itunes:name>
+                <itunes:email>$EMAIL</itunes:email>
+        </itunes:owner>``
 
 """ >> ./feedtop
 echo "Adding the header"
