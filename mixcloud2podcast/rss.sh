@@ -21,8 +21,6 @@ LINK=https://listen.dublindigitalradio.com/resident/just-a-blip
 RSS_LINK=http://feeds.feedburner.com/just-a-blip
 # Org, brand or individual's name
 AUTHOR="Glenn O'Brien"
-# © 2021 FirstName LastName
-COPYRIGHT="&#xA9; $(date +"%Y") $AUTHOR"
 # Owner email
 EMAIL="gob00@yahoo.com"
 # Verbose description of the podcast
@@ -42,6 +40,9 @@ EXPLICIT="no"
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
+
+# The copyright: © 2021 FirstName LastName
+COPYRIGHT="&#xA9; $(date +"%Y") $AUTHOR"
 
 RSS_DATE=$(date -R) # now
 
