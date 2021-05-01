@@ -28,7 +28,7 @@ DESCRIPTION="A fortnightly voyage through oceans of sound. Sometimes calm with c
 # Short description of the podcast - 255 character max
 SUBTITLE=$DESCRIPTION
 # URL to an image representing the feed (iTunes prefers 1400x1400 jpg)
-IMAGE=http://justablip.github.io/justablip.jpg
+IMAGE=http://justablip.github.io/just-a-blip.jpg
 # Itunes category See https://www.podcastinsights.com/itunes-podcast-categories/ for valid categories
 CATEGORY="Music"
 # Channel keywords, comma and space separated
