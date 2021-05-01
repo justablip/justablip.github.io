@@ -64,10 +64,10 @@ echo """<channel>
                 <url>$IMAGE</url>
                 <title>$TITLE</title>
         </image>
+        <itunes:image href='$IMAGE' />
         <itunes:subtitle>$SUBTITLE</itunes:subtitle>
         <itunes:summary>$DESCRIPTION</itunes:summary>        
         <itunes:category text='$CATEGORY' />
-        <itunes:image href='$IMAGE' />
         <itunes:keywords>$KEYWORDS</itunes:keywords>
         <itunes:author>$AUTHOR</itunes:author>
         <itunes:owner>
