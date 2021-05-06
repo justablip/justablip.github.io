@@ -18,6 +18,11 @@ SOURCE='Dublin Digital Radio'
 SUBJECT='dublindigitalradio; justablip; radio; podcast; ireland; dublin; music; alternative'
 # The language the media is written or recorded in as 3 letter MARC language code
 LANGUAGE='eng'
+# What collection this item belongs to. Must be a valid collection identifier
+#COLLECTION='opensource_audio'
+COLLECTION='just-a-blip'
+# The type of media. Accepted values: texts etree audio movies software image data web collection account
+MEDIATYPE='audio'
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
@@ -31,9 +36,7 @@ fi
 m4a=$1
 json=${m4a%.m4a}.info.json # the metadata json file (full path)
 IDENTIFIER=$(jq --raw-output '.id' $json) # get data from json
-MEDIATYPE='audio'
 TITLE=$(jq --raw-output '.title' $json) # get data from json
-COLLECTION='opensource_audio'
 DESCRIPTION=$(jq --raw-output '.description' $json) # get data from json
 DESCRIPTION=${DESCRIPTION//$'\n'/ <br />} # convert newlines /n to html <br />
 DESCRIPTION=$(echo $DESCRIPTION | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g') # convert special characters to HTML entities

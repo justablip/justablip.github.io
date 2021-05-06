@@ -37,6 +37,8 @@ KEYWORDS="dublindigitalradio, justablip, radio, podcast, ireland, dublin, music,
 LANGUAGE="en-us"
 # is it too dangerous for the impressionable kiddos?
 EXPLICIT="no"
+# The type of show: Episodic (newest episodes first) or Serial (oldest episodes first <itunes:episode> numbers must be given for each episode.)
+TYPE="Episodic"
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
@@ -75,6 +77,7 @@ echo """<channel>
                 <itunes:email>$EMAIL</itunes:email>
         </itunes:owner>
         <itunes:explicit>$EXPLICIT</itunes:explicit>
+        <itunes:type>$TYPE</itunes:type>
 
 """ >> ./feedtop
 echo "Adding the header"
