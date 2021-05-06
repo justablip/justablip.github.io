@@ -171,7 +171,7 @@ for json in "${arr_json[@]}"; do
         item_enclosure='http://archive.org/download/'$item_id'/'$item_id'.m4a'
         #item_enclosure_length=$(stat -f%z $m4a) # get file size in bytes
         item_enclosure_length=$(jq --raw-output '.length' $json) # get file size in bytes (we added this data to the json above)
-        item_enclosure_type='audio/m4a'
+        item_enclosure_type='audio/x-m4a'
         item_description=$(jq --raw-output '.description' $json) # get data from json
         item_description=${item_description//$'\n'/ <br />} # convert newlines /n to html <br />
         item_description=$(echo $item_description | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g') # convert special characters to HTML entities
