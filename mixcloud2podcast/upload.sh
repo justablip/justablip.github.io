@@ -6,7 +6,7 @@
 # brew install internetarchive (Internet Archive's command line interface)
 # ------------------------------------------------------------------------
 
-# Internet archive screen name
+# Internet archive screen/account name
 AUTHOR='abmc'
 # The person or organization that provided the physical or digital media
 CONTRIBUTOR='António Costa'
