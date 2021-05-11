@@ -38,7 +38,7 @@ LANGUAGE="en-us"
 # is it too dangerous for the impressionable kiddos?
 EXPLICIT="no"
 # The type of show: Episodic (newest episodes first) or Serial (oldest episodes first <itunes:episode> numbers must be given for each episode.)
-TYPE="Episodic"
+TYPE="episodic"
 
 # Don't edit below this line unless you know what you are doing.
 # ------------------------------------------------------------------------
