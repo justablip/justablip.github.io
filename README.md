@@ -7,7 +7,8 @@ Converts "Just A Blip" radio show from Mixcloud to an RSS podcast (with media ho
 ## mixcloud2podcast shell scripts:
 
 #### download.sh
-Downloads all m4a and json metadata for a mixcloud playlist or user
+Downloads all m4a and json metadata for a mixcloud playlist or user. 
+Will upload and generate rss too after each download.
 
 _Requirements:_  
 brew install youtube-dl (to download files from mixcloud)  
