@@ -147,12 +147,9 @@ for json in "${arr_json[@]}"; do
         if [ $file_timestamp != $pub_timestamp ]; then
                 echo "Fixing file creation time for $json"
                 echo "Fixing file creation time for $m4a"
-                if [ "$(uname)" == "Darwin" ]; then
-                        # Mac OS X platform 
+                if [ "$(uname)" == "Darwin" ]; then # Mac OS X platform 
                         touch_time_str=$(date -j -f "%s" $pub_timestamp "+%Y%m%d%H%M.%S") # time string in format used by touch command
-
-                elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-                        # GNU/Linux platform
+                elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then # GNU/Linux platform
                         touch_time_str=$(date -d @$pub_timestamp "+%Y%m%d%H%M.%S") # time string in format used by touch command
                 fi
                 # echo "touch -t $touch_time_str [file]"
@@ -172,11 +169,9 @@ for json in "${arr_json[@]}"; do
         item_id=$(jq --raw-output '.id' $json) # the item's id from json file
         item_title=$(jq --raw-output '.title' $json) # get data from json
         item_date=$(jq --raw-output '.timestamp' $json) # get data from json
-        if [ "$(uname)" == "Darwin" ]; then
-               # Mac OS X platform 
+        if [ "$(uname)" == "Darwin" ]; then # Mac OS X platform 
                 item_date=$(date -j -f "%s" $item_date "+%a, %d %b %Y %H:%M:%S %z") # convert timestamp to date string
-        elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-                # GNU/Linux platform
+        elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then # GNU/Linux platform
                 item_date=$(date -d @$item_date "+%a, %d %b %Y %H:%M:%S %z") # convert timestamp to date string
         fi
         item_link=$(jq --raw-output '.webpage_url' $json) # mixcloud link
