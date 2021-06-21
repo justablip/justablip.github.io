@@ -26,9 +26,14 @@ MIXCLOUD_URL=https://www.mixcloud.com/DublinDigitalRadio/playlists/just-a-blip/
 
 #youtube-dl --simulate \
 youtube-dl \
+--audio-format best \
 --download-archive $ARCHIVE_FILE \
 -o $ARCHIVE_DIR/'%(id)s.%(ext)s' --write-info-json \
---add-metadata --embed-thumbnail \
+--add-metadata \
 --exec './upload.sh {} && ./rss.sh' \
 $MIXCLOUD_URL
+
+
+# disabled because not working on linux for some reason
+# --embed-thumbnail \ 
 

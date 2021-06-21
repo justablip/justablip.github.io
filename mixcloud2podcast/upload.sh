@@ -42,7 +42,11 @@ DESCRIPTION=${DESCRIPTION//$'\n'/ <br />} # convert newlines /n to html <br />
 DESCRIPTION=$(echo $DESCRIPTION | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g') # convert special characters to HTML entities
 ARTIST=$(jq --raw-output '.artist' $json) # get data from json
 DATE=$(jq --raw-output '.timestamp' $json) # get data from json
-DATE=$(date -j -f "%s" $DATE "+%F") # convert timestamp to date string
+if [ "$(uname)" == "Darwin" ]; then # Mac OS X platform 
+	DATE=$(date -j -f "%s" $DATE "+%F") # convert timestamp to date string
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then # GNU/Linux platform
+	DATE=$(date -d @$DATE "+%F") # convert timestamp to date string
+fi	
 LICENSEURL='http://creativecommons.org/licenses/by-nc-sa/4.0/'
 
 
