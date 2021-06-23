@@ -19,6 +19,7 @@ Uploads a mixcloud m4a file to the Internet Archive
 
 _Requirements:_  
 brew install internetarchive (Internet Archive's command line interface)
+ia configure (configure ia with your credentials)
 
 #### rss.sh
 Creates a podcast rss file from a folder of m4a and metadata json files downloaded from mixcloud using youtube-dl. Also pushes to a git repository.
