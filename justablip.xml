@@ -6,7 +6,7 @@
         <title>Just A Blip</title>
         <link>https://listen.dublindigitalradio.com/resident/just-a-blip</link>
         <description>A fortnightly voyage through oceans of sound. Sometimes calm with clear skies, sometimes the lifeboats have to be deployed. All aboard!</description>
-        <lastBuildDate>Fri, 15 Oct 2021 00:24:34 +0200</lastBuildDate>
+        <lastBuildDate>Fri, 15 Oct 2021 00:26:11 +0200</lastBuildDate>
         <language>en-us</language>
         <copyright>&#xA9; 2021 Glenn O'Brien</copyright>
         <ttl>60</ttl>
@@ -29,6 +29,16 @@
         <itunes:type>episodic</itunes:type>
 
 
+
+        <item>
+                <title>Just A Blip 079 - DDR - 28th August 2021</title>
+                <link>https://www.mixcloud.com/DublinDigitalRadio/just-a-blip-28-08-21/</link>
+                <guid>http://archive.org/details/DublinDigitalRadio_just-a-blip-28-08-21</guid>
+                <enclosure url="http://archive.org/download/DublinDigitalRadio_just-a-blip-28-08-21/DublinDigitalRadio_just-a-blip-28-08-21.m4a" length="null" type="audio/x-m4a" />
+                <description>Taqbir - Sma3 &lt;br /&gt;Der Zyklus - Biometric ID &lt;br /&gt;&quot;Blue&quot; Gene Tyranny - Timing &lt;br /&gt;Tony Conrad with Faust - The Pyre of Angus was in Kathmandu  &lt;br /&gt;Bullion - We Had A Good Time &lt;br /&gt;The Jellies - Jive Baby on a Saturday Night &lt;br /&gt;Slum Village - Get Dis Money &lt;br /&gt;Caroline Loeb - C&#39;est La Ouate (Long Version) &lt;br /&gt;Saloli - Barcarolle &lt;br /&gt;Paul McCartney - Secret Friend (Full Length Version) &lt;br /&gt;Dry Cleaning - Leafy  &lt;br /&gt;Jaco Maron - Katangaz &lt;br /&gt;Galt MacDermot - Space &lt;br /&gt;Carlos Nino &amp; Friends - Please, Wake Up &lt;br /&gt;Gabriel Saloman - Contained Battle/Ascend &lt;br /&gt;Lenny White - Mating Drive &lt;br /&gt;Raul de Souza - Sweet Lucy &lt;br /&gt;Paul Johnson - Hear The Music &lt;br /&gt;Green Room - Riohv &lt;br /&gt;Blixaboy - Azanian Funk &lt;br /&gt;Moritz von Oswald Trio - Chapter 5 &lt;br /&gt;I Want to Thank You - Alicia Myers &lt;br /&gt;Biz Markie - Just A Friend &lt;br /&gt;Kara-Lis Coverdale - Fantas Morbida</description>
+                <pubDate>Sat, 28 Aug 2021 17:01:35 +0200</pubDate>
+        </item>
+        
 
         <item>
                 <title>Just A Blip 080 - DDR - 24th September 2021</title>
